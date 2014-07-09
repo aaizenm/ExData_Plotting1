@@ -6,3 +6,5 @@ hpc2<-transform(hpc1, Global_active_power = as.numeric(Global_active_power), Vol
 
 ## plot1
 hist(hpc2$Global_active_power, main = "Global Active Power", col="red", ylim=c(0, 1340), xlab="Global Active Power (kilowatts)")
+dev.copy(png, file="plot1.png", width = 480, height = 480, units = "px")
+dev.off()
